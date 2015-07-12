@@ -1,4 +1,4 @@
-# read rough d1 subset having needed data
+# read rough d subset having needed data
 d <- read.csv("household_power_consumption.txt", sep=";", quote="", na.strings="?", nrows = 70000)
 # filter out d2 data subset
 d2 <- d[d$Date == "1/2/2007" | d$Date == "2/2/2007",]
