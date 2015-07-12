@@ -4,7 +4,7 @@ d <- read.csv("household_power_consumption.txt", sep=";", quote="", na.strings="
 # filter out d2 data subset
 d2 <- d[d$Date == "1/2/2007" | d$Date == "2/2/2007",]
 
-# make x from date and time
+# combine date and time
 datetime <- as.POSIXct(paste(d2$Date, d2$Time), format="%d/%m/%Y %H:%M:%S")
 
 # open png graph device
