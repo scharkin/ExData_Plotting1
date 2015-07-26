@@ -17,6 +17,6 @@ png(filename = "plot3.png", width = 480, height = 480, units = "px")
 ggplot(r, aes(factor(year), x, fill = type)) +
     geom_bar(stat="identity", position="dodge") +
     labs(title = "PM2.5 emissions in the Baltimore City, Maryland",
-    	y = "PM2.5 emission, tons", x = "Years")
+    	y = "Emissions, tons", x = "Years")
 # finish
 dev.off()
